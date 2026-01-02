@@ -2,6 +2,8 @@
   Simple guessing game
 
   Don't call me a retard, I'm just a beginner lol ☻
+
+  Feel free to work on it ⍫
 */
 
 use std::cmp::Ordering;
