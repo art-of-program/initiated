@@ -1,3 +1,9 @@
+/*
+  Simple guessing game
+
+  Don't call me a retard, I'm just a beginner lol ☻
+*/
+
 use std::cmp::Ordering;
 use std::io;
 
@@ -18,7 +24,12 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line!");
 
-        let guess: u32 = guess.trim().parse().expect("Please tye a number");
+        // let guess: u32 = guess.trim().parse().expect("please type a number");
+
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         println!("You guessed: {guess}");
 
@@ -32,4 +43,4 @@ fn main() {
         }
     }
 
-}   
+}
