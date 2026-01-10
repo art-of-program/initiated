@@ -14,6 +14,6 @@ fn main() {
     println!("The value of x is: {x}");
 
     // constants evaluation
-    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
+    const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3; // constant declaration
     println!("{THREE_HOURS_IN_SECONDS}");
 }
